@@ -1,12 +1,23 @@
+```md
+<div align="center">
+
 # Inflation and Sector Performance Analysis
 
-Analysis of inflation, interest rates, and S&P 500 sector performance using Python, FRED data, and Yahoo Finance.
+### Exploring the relationship between inflation, interest rates, and S&P 500 sector performance using Python, FRED data, and Yahoo Finance.
+
+**Authors:** Nathan Nemali & Daniel Virula
+
+</div>
+
+---
 
 ## Overview
 
-This project explores how inflation and interest rate volatility affect major sectors of the S&P 500, including Technology, Energy, Financials, and Utilities. By combining macroeconomic data from FRED with market data from Yahoo Finance, we analyzed how different sectors respond during periods of economic uncertainty and inflation volatility.
+This project analyzes how inflation and interest rate volatility impact major sectors of the S&P 500, including Technology, Energy, Financials, and Utilities. 
 
-Using statistical modeling, correlation analysis, and custom visualizations, we identified which sectors are most sensitive to inflationary conditions and compared their long-term performance over time.
+Using macroeconomic data from FRED and market data from Yahoo Finance, we combined statistical modeling and financial analysis techniques to identify which sectors are most sensitive to inflationary conditions and how major economic events influence sector growth over time.
+
+Our analysis focused on the time period from 2000–2025, which includes major economic events such as the 2008 Financial Crisis, the COVID-19 market crash, and the post-COVID inflation surge.
 
 ---
 
@@ -14,23 +25,23 @@ Using statistical modeling, correlation analysis, and custom visualizations, we 
 
 - Which sectors are most correlated with inflation?
 - How do interest rate changes impact sector returns?
-- Which sectors perform best during periods of high inflation volatility?
-- How did major macroeconomic events affect sector growth?
+- Which sectors perform best during periods of inflation volatility?
+- How do major macroeconomic events impact sector growth?
 
 ---
 
 ## Data Sources
 
-- FRED (Federal Reserve Economic Data)
-  - CPIAUCSL (Consumer Price Index)
-  - FEDFUNDS (Federal Funds Interest Rate)
+### FRED (Federal Reserve Economic Data)
+- CPIAUCSL — Consumer Price Index
+- FEDFUNDS — Federal Funds Interest Rate
 
-- Yahoo Finance
-  - XLK — Technology
-  - XLF — Financials
-  - XLE — Energy
-  - XLU — Utilities
-  - ^GSPC — S&P 500
+### Yahoo Finance
+- XLK — Technology
+- XLF — Financials
+- XLE — Energy
+- XLU — Utilities
+- ^GSPC — S&P 500
 
 ---
 
@@ -41,36 +52,47 @@ Using statistical modeling, correlation analysis, and custom visualizations, we 
 - Heatmap Correlation Matrix
 - Bubble Plot Visualization
 - Time Series Analysis
-- Data Merging and Cleaning with Pandas
+- Data Cleaning and Merging with Pandas
 
 ---
 
-## Inflation Trend Over Time
+## Sector Performance During Inflationary Periods
 
-The graph below shows the long-term increase in inflation over the selected time period. Major increases in inflation can be seen after the 2008 financial crisis and during the post-COVID inflation surge beginning in 2021.
+This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods. 
 
-![Inflation Trend](Inflation.png)
+The highlighted sections represent periods of elevated inflation volatility, while the vertical markers identify major economic events including the 2008 recession and post-COVID inflation surge.
+
+![Sector Performance During Inflation](Inflation.png)
+
+*Figure 1. Sector growth comparison during major inflationary and macroeconomic periods.*
 
 ---
 
 ## Correlation Heatmap
 
-This heatmap compares the correlation between sectors, inflation, interest rate changes, and the S&P 500. Energy showed the strongest relationship with inflation, while Technology and Financials had the strongest correlation with the overall market.
+The heatmap below compares the relationships between inflation, interest rate changes, the S&P 500, and major market sectors.
+
+Energy showed the strongest relationship with inflation, while Technology and Financials displayed the strongest relationship with the broader market.
 
 ![Correlation Heatmap](HeatMap.png)
 
+*Figure 2. Correlation matrix comparing sectors, inflation, and interest rate changes.*
+
 ---
 
-## Bubble Plot Visualization
+## Sector Risk and Return During Inflation
 
-This bubble plot compares sectors using three dimensions at once:
+This bubble plot compares sectors using three dimensions simultaneously:
+
 - X-axis → correlation with inflation
 - Y-axis → average return
 - Bubble size → volatility/risk
 
-The visualization shows that Energy had the strongest inflation relationship, while Technology produced the highest average return over time.
+The visualization demonstrates that Energy had the strongest inflation relationship, while Technology produced the highest average return over the selected time period.
 
 ![Bubble Plot](Bubble.png)
+
+*Figure 3. Comparison of sector inflation correlation, returns, and volatility.*
 
 ---
 
@@ -78,22 +100,42 @@ The visualization shows that Energy had the strongest inflation relationship, wh
 
 - Energy showed the strongest relationship with inflation.
 - Technology produced the highest long-term return.
-- Utilities were more stable but had lower returns.
+- Utilities were more stable but generated lower returns.
 - Inflation volatility significantly impacted sector behavior.
-- Different sectors react very differently during periods of economic uncertainty.
+- Different sectors reacted differently during periods of economic uncertainty.
 
 ---
 
 ## Future Improvements
 
 If given more time and resources, we would expand this project by:
+
 - Including additional sectors and international markets
 - Applying machine learning prediction models
 - Incorporating unemployment and GDP data
-- Comparing inflationary periods across different decades
+- Comparing inflationary periods across multiple decades
 
 ---
 
-## Authors
+## Repository Contents
 
-Nathan Nemali and Daniel Virula
+- `Final_Project.ipynb` → Main Google Colab notebook
+- `Inflation.png` → Sector performance visualization
+- `HeatMap.png` → Correlation heatmap
+- `Bubble.png` → Bubble plot visualization
+
+---
+
+## Tools & Libraries
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Plotly
+- Statsmodels
+- yFinance
+- FRED API
+
+---
+```
