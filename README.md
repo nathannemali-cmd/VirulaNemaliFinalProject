@@ -115,18 +115,6 @@ Energy showed the strongest relationship with inflation, while Technology and Fi
 
 ---
 
-# How did These sectors perform over historic events?
-
-This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods.
-
-The highlighted sections represent periods of elevated inflation volatility, while the vertical markers identify major economic events including the 2008 recession and post-COVID inflation surge.
-
-![Sector Performance During Inflation](Inflation.png)
-
-*Figure 5. Sector growth comparison during major inflationary and macroeconomic periods.*
-
----
-
 ## Sector Risk and Return During Inflation
 
 This bubble plot compares sectors using three dimensions simultaneously:
@@ -140,6 +128,18 @@ The visualization demonstrates that Energy had the strongest inflation relations
 ![Bubble Plot](Bubble.png)
 
 *Figure 6. Comparison of sector inflation correlation, returns, and volatility.*
+
+---
+
+# How did These sectors perform over historic events?
+
+This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods.
+
+The highlighted sections represent periods of elevated inflation volatility, while the vertical markers identify major economic events including the 2008 recession and post-COVID inflation surge.
+
+![Sector Performance During Inflation](Inflation.png)
+
+*Figure 5. Sector growth comparison during major inflationary and macroeconomic periods.*
 
 ---
 
