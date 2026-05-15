@@ -12,7 +12,7 @@
 
 ## Overview
 
-This project analyzes how inflation and interest rate volatility impact major sectors of the S&P 500, including Technology, Energy, Financials, and Utilities. 
+This project analyzes how inflation and interest rate volatility impact major sectors of the S&P 500, including Technology, Energy, Financials, and Utilities.
 
 Using macroeconomic data from FRED and market data from Yahoo Finance, we combined statistical modeling and financial analysis techniques to identify which sectors are most sensitive to inflationary conditions and how major economic events influence sector growth over time.
 
@@ -55,15 +55,35 @@ Our analysis focused on the time period from 2000–2025, which includes major e
 
 ---
 
-## Sector Performance During Inflationary Periods
+## Inflation Trend Over Time
 
-This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods. 
+The graph below shows the long-term increase in inflation from 2000–2025. Significant increases occurred following the 2008 financial crisis and during the post-COVID inflation surge beginning in 2021.
 
-The highlighted sections represent periods of elevated inflation volatility, while the vertical markers identify major economic events including the 2008 recession and post-COVID inflation surge.
+![CPI Inflation](cpi.png)
 
-![Sector Performance During Inflation](Inflation.png)
+*Figure 1. Consumer Price Index trend from 2000–2025.*
 
-*Figure 1. Sector growth comparison during major inflationary and macroeconomic periods.*
+---
+
+## Federal Funds Interest Rate
+
+This graph displays changes in the Federal Funds interest rate over time. Large shifts in rates can be observed during major macroeconomic events including the 2008 recession, COVID-19, and the recent inflationary environment.
+
+![Federal Funds Rate](graph2.png)
+
+*Figure 2. Federal Funds interest rate over time.*
+
+---
+
+## OLS Regression Analysis
+
+We used OLS multiple regression models to measure the relationship between sector returns, inflation, and interest rate changes.
+
+The example below shows the Technology sector regression model. The results indicate that inflation had a statistically significant positive relationship with Technology sector returns, while interest rate changes showed a weaker relationship overall.
+
+![OLS Regression](regression.png)
+
+*Figure 3. Example OLS regression output for the Technology sector.*
 
 ---
 
@@ -75,7 +95,19 @@ Energy showed the strongest relationship with inflation, while Technology and Fi
 
 ![Correlation Heatmap](HeatMap.png)
 
-*Figure 2. Correlation matrix comparing sectors, inflation, and interest rate changes.*
+*Figure 4. Correlation matrix comparing sectors, inflation, and interest rate changes.*
+
+---
+
+## Sector Performance During Inflationary Periods
+
+This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods.
+
+The highlighted sections represent periods of elevated inflation volatility, while the vertical markers identify major economic events including the 2008 recession and post-COVID inflation surge.
+
+![Sector Performance During Inflation](Inflation.png)
+
+*Figure 5. Sector growth comparison during major inflationary and macroeconomic periods.*
 
 ---
 
@@ -91,7 +123,7 @@ The visualization demonstrates that Energy had the strongest inflation relations
 
 ![Bubble Plot](Bubble.png)
 
-*Figure 3. Comparison of sector inflation correlation, returns, and volatility.*
+*Figure 6. Comparison of sector inflation correlation, returns, and volatility.*
 
 ---
 
@@ -119,8 +151,11 @@ If given more time and resources, we would expand this project by:
 ## Repository Contents
 
 - `Final_Project.ipynb` → Main Google Colab notebook
-- `Inflation.png` → Sector performance visualization
+- `cpi.png` → CPI inflation graph
+- `graph2.png` → Federal Funds interest rate graph
+- `regression.png` → OLS regression output
 - `HeatMap.png` → Correlation heatmap
+- `Inflation.png` → Sector performance visualization
 - `Bubble.png` → Bubble plot visualization
 
 ---
@@ -137,4 +172,4 @@ If given more time and resources, we would expand this project by:
 - FRED API
 
 ---
-```
+
