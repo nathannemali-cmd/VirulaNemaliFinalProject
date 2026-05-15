@@ -1,12 +1,8 @@
-<div align="center">
-
 # Inflation and Sector Performance Analysis
 
 ### Exploring the relationship between inflation, interest rates, and S&P 500 sector performance using Python, FRED data, and Yahoo Finance.
 
 **Authors:** Nathan Nemali & Daniel Virula
-
-</div>
 
 ---
 
