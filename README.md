@@ -4,11 +4,16 @@
 
 **Authors:** Nathan Nemali & Daniel Virula
 
+## Resources
+- GeeksforGeeks for yfinance
+- Algo Trading 101 for yfinance
+- Data camp for Pandas web.reader
+
 ---
 
 ## Overview
 
-This project analyzes how inflation and interest rate volatility impact major sectors of the S&P 500, including Technology, Energy, Financials, and Utilities.
+This project analyzes how inflation and interest rate volatility impact major sectors of the S&P 500
 
 Using macroeconomic data from FRED and market data from Yahoo Finance, we combined statistical modeling and financial analysis techniques to identify which sectors are most sensitive to inflationary conditions and how major economic events influence sector growth over time.
 
@@ -46,8 +51,16 @@ Our analysis focused on the time period from 2000–2025, which includes major e
 - Correlation Analysis
 - Heatmap Correlation Matrix
 - Bubble Plot Visualization
-- Time Series Analysis
+- Webscraping
+- Rolling Volitilty Analysis
 - Data Cleaning and Merging with Pandas
+
+---
+## Economic Basics
+
+-S&P 500 is made up of several sectors, depending on what its industry focus is.
+-FedFundRate is how interest rate is measured.
+-CPI is how inflation is measured
 
 ---
 
@@ -75,11 +88,18 @@ This graph displays changes in the Federal Funds interest rate over time. Large 
 
 We used OLS multiple regression models to measure the relationship between sector returns, inflation, and interest rate changes.
 
-The example below shows the Technology sector regression model. The results indicate that inflation had a statistically significant positive relationship with Technology sector returns, while interest rate changes showed a weaker relationship overall.
+The example below shows the Technology sector regression model. The model shows an R^2 of .038 and a coefficient of 1.1
 
 ![OLS Regression](regression.png)
 
 *Figure 3. Example OLS regression output for the Technology sector.*
+
+## Key Results
+
+Tech: adjusted R^2 : .029, coefficient of inflation : 1.1
+Financials: adjusted R^2: 0.22, coefficient of inflation: 1.23
+Energy: adjusted R^2: .101, coefficient of inflation : 2.03
+Utilities: adjusted R^2: .067, coefficient of inlfation: 1.24
 
 ---
 
@@ -95,7 +115,7 @@ Energy showed the strongest relationship with inflation, while Technology and Fi
 
 ---
 
-## Sector Performance During Inflationary Periods
+# How did These sectors perform over historic events?
 
 This visualization compares the growth of Technology, Energy, and Utilities during major inflationary and macroeconomic periods.
 
@@ -142,17 +162,7 @@ If given more time and resources, we would expand this project by:
 - Incorporating unemployment and GDP data
 - Comparing inflationary periods across multiple decades
 
----
 
-## Repository Contents
-
-- `Final_Project.ipynb` → Main Google Colab notebook
-- `cpi.png` → CPI inflation graph
-- `graph2.png` → Federal Funds interest rate graph
-- `regression.png` → OLS regression output
-- `HeatMap.png` → Correlation heatmap
-- `Inflation.png` → Sector performance visualization
-- `Bubble.png` → Bubble plot visualization
 
 ---
 
