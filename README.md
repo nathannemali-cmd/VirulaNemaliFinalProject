@@ -1,4 +1,3 @@
-```md
 <div align="center">
 
 # Inflation and Sector Performance Analysis
