@@ -65,7 +65,7 @@ The graph below shows the long-term increase in inflation from 2000–2025. Sign
 
 This graph displays changes in the Federal Funds interest rate over time. Large shifts in rates can be observed during major macroeconomic events including the 2008 recession, COVID-19, and the recent inflationary environment.
 
-![Federal Funds Rate](graph2.png)
+![Federal Funds Rate](fed.png)
 
 *Figure 2. Federal Funds interest rate over time.*
 
